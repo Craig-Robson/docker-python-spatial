@@ -2,8 +2,9 @@ attrs==19.3.0
 click==7.1.1
 click-plugins==1.1.1
 cligj==0.5.0
-Fiona==1.8.13.post1
 geopandas==0.7.0
+Fiona==1.8.13.post1
+gdal
 munch==2.5.0
 numpy==1.18.2
 pandas==1.0.3
