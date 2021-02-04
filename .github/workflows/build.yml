@@ -21,7 +21,7 @@ jobs:
     - name: Setup GDAL (windows)
       if: matrix.os == 'windows-latest'
       run: |
-        choco install gdal -y
+        choco install geoda -y
         pip3 install geos gdal
 
     - name: Install python requirements
