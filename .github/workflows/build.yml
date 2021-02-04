@@ -22,7 +22,7 @@ jobs:
       if: matrix.os == 'windows-latest'
       run: |
         choco install Gdal.Core --version 2.3.0-beta-024-1801 --source https://www.myget.org/F/gdalcore/api/v2 -y
-        pip3 install geos gdal
+        pip3 install wheel geos gdal
 
     - name: Install python requirements
       run: |
