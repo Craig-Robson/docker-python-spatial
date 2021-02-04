@@ -21,7 +21,7 @@ jobs:
     - name: Setup GDAL (windows)
       if: matrix.os == 'windows-latest'
       run: |
-        choco install swig -y
+        choco install gdal -y
         pip3 install geos gdal
 
     - name: Install python requirements
