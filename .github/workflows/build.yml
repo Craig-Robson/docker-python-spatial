@@ -23,6 +23,5 @@ jobs:
         use-only-tar-bz2: true
 
     - name: Check conda
-      run:|
+      run: |
         conda install gdal
-        conda --version
