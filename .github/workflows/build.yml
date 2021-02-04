@@ -14,16 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: conda-incubator/setup-miniconda@v2
       with:
         python-version: ${{ matrix.python-version }}
 
     - name: Setup GDAL (windows)
       if: matrix.os == 'windows-latest'
       run: |
-        choco install Gdal.Core --version 2.3.0-beta-024-1801 --source https://www.myget.org/F/gdalcore/api/v2 -y
-        pip3 install wheel geos gdal
+        conda install gdal
 
-    - name: Install python requirements
-      run: |
-        pip3 install -r requirements.txt
