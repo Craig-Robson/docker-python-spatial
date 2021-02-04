@@ -22,4 +22,4 @@ jobs:
       if: matrix.os == 'windows-latest'
       run: |
         conda install gdal
-
+        conda install --file requirements.txt
