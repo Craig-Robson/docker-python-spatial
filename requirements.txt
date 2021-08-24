@@ -12,4 +12,6 @@ python-dateutil==2.8.1
 pytz==2019.3
 Rtree
 Shapely==1.7.0
+sqlalchemy
 six==1.14.0
+psycopg2-binary
